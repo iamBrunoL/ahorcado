@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" href="cssInicio/index.css">
+        <title>Hello World</title>
+    </head>
+    <style> 
+
+        body { 
+          
+            background-image: url("img/FONDO.gif"); 
+            background-position: center 25%; 
+            background-size: cover;
+            background-attachment: fixed;
+            width:100%;
+          
+            
+            
+      
+      
+        } 
+      </style> 
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+                    <center>
+                        <br/>
+                        <img src="img/GIFLETRASINICIO.gif" width="280"  alt="">
+                    </center>
+                        <center>
+                            <br/><br/><br/><br/>
+                            <a href="#modal1"><button>
+                                <span class="shadow"></span>
+                                <span class="edge"></span>
+                                <span class="front text"> Play
+                                </span>
+                              </button>
+                            </a>
+                        </center>
+                        <div>
+                            <br /><br /><br />
+                            <br /><br /><br />
+                            <br /><br />
+                            
+                            <center>
+                              <a href="Instrucciones.html">
+                              <img  src="img/boton.png" width="80" height="80" alt=""></a>
+                            </center>
+                        </div>
+                        <div id="modal1" class="modalmask">
+                          
+                        
+                            <div class="modalbox movedown">
+                              <a href="#close" title="Close" class="close">X</a>
+                              <center>
+                                <br /><br /><br />
+                                <h2>NOMBRE JUGADOR</h2>
+                                <br />
+                                <div class="input-wrapper">
+                                  <input class="input" name="nombreUsuario" id="nombreUsuario" style= font-size:25px>
+                                </div>
+                                <br /><br /><br /><br />
+                                <button class="btn" onclick="registroUsuario()"><h3>Play</h3></button>
+                      
+                              </center>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div >
+          <table class="table table-danger" display="block">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="tabla">
+            </tbody>
+          </table>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

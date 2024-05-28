@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0px;
+	font-family: Raleway, sans-serif;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+body {
+	background-image: url("../img/scores.jpg") ;
+
+	background-size: cover;
+	position: static;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center;	
+}
+.pantalla1 {
+    margin-top: 10%;
+    opacity: 90%;
+	background: linear-gradient(90deg, #ffffff, #0f9095);
+	position: relative;
+	height: 600px;
+	width: 360px;
+	box-shadow: 0px 0px 24px #a0a0eb;
+	border-radius: 20px;
+}
+
+.pantalla2{
+    opacity: 90%;
+	background: linear-gradient(90deg, #ffffff, #0f9095);
+	position: relative;
+	height: 600px;
+	width: 360px;
+	box-shadow: 0px 0px 24px #a0a0eb;
+	border-radius: 20px;
+}
+
+table{
+	padding: 10px;
+	margin-left: 5px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 20px;
+
+}
+th, td {
+	width: 25%;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid rgb(255, 255, 255);
+	border-spacing: 0;
+}
+
+.inputs{
+    border: none;
+	background: none;
+	padding: 15px;
+	padding-left: 20px;
+	font-weight: 700px;
+	width: 15%;
+    font-size: 30px;
+    
+}
+h1{
+    font-size: 45x;
+    color: #ffffff;
+    text-align: center;
+    padding-left: 10px; 
+    padding-top: 10px;
+}
+
+.labels{
+    margin-left: 10px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+.style_inputs2{
+    text-align: center;
+    margin-top: 20px;
+    background: #fff;
+	font-size: 15px;
+	border-radius: 30px;
+	border: 1px solid #e6e8d3;
+    justify-content: center;
+	align-items: center;
+	width: 30%;
+	color: #000000;
+	box-shadow: 2px 3px 5px #00f6c9;
+    padding: 15px;
+
+}
+
+.buttons {
+    margin-left: 80px;
+    text-align: center;
+	background: #fff;
+	font-size: 14px;
+	margin-top: 20px;
+	padding: 14px 20px;
+	border-radius: 26px;
+	border: 1px solid #d4d3e8;
+	font-weight: 700;
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	width: 50%;
+	color: #4c489d;
+	box-shadow: 0px 2px 2px #5c5696;
+	cursor: pointer;
+
+
+}
+
+@media screen and (max-width:800px) {
+	.container{
+		margin-top: -30px;
+	}
+}

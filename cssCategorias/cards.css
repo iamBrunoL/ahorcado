@@ -1,0 +1,441 @@
+
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  color: #f8983f;
+  background-color: #fbee8b;
+  border-radius: 30px;
+  box-shadow: 7px 13px 37px #ffd016;
+}
+
+
+
+
+
+/* ............................ responsive ............................ */
+
+/* Por debajo de 1200px */
+@media screen and (max-width: 1200px) {
+  p {
+      font-size: 18px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+}
+
+/* Por debajo de 800px */
+@media screen and (max-width: 800px) {
+  p {
+      font-size: 14px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+}
+
+/* Por debajo de 400px */
+@media screen and (max-width: 400px) {
+  p {
+      font-size: 12px;
+  }
+
+  h3 {
+      font-size: 14px;
+  }
+}
+
+
+/* mobile first */
+body {
+  font-size: 14px;
+}
+
+/* tabletas */
+@media (min-width: 768px) {
+  body {
+      font-size: 15px;
+  }
+}
+
+/* escritorio normales */
+@media (min-width: 992px) {
+  body {
+      font-size: 16px;
+  }
+}
+
+/* pantallas grandes */
+@media (min-width: 1200px) {
+  body {
+      font-size: 17px;
+  }
+}
+
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  size: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+/* ............................ categorias ............................ */
+
+.card1 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/videojuegos.png') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card2 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/cars-removebg.png') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card3 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/movie.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card4 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/music2.png') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card5 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/c2.png') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card6 {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background: url('../img/people_14383.png') center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card_content {
+  opacity: 0;
+  transition: opacity .25s;
+  text-align: justify;
+  padding: 20px;
+}
+
+/* videojuegos */
+.card1::before,
+.card1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(186, 223, 217);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card1::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card1::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card1:hover::before,
+.card1:hover::after {
+  transform: translate(0);
+}
+
+.card1:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+/* carros */
+.card2::before,
+.card2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(255, 223, 128);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card2::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card2::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card2:hover::before,
+.card2:hover::after {
+  transform: translate(0);
+}
+
+.card2:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+/* peliculas */
+.card3::before,
+.card3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(167, 215, 251);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card3::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card3::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card3:hover::before,
+.card3:hover::after {
+  transform: translate(0);
+}
+
+.card3:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+/* musica */
+.card4::before,
+.card4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(255, 185, 185);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card4::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card4::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card4:hover::before,
+.card4:hover::after {
+  transform: translate(0);
+}
+
+.card4:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+/* fisicos */
+.card5::before,
+.card5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(167, 146, 239);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card5::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card5::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card5:hover::before,
+.card5:hover::after {
+  transform: translate(0);
+}
+
+.card5:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+/* libre */
+.card6::before,
+.card6::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(60% + 35px);
+  background-color: rgb(253, 192, 192);
+  transition: transform .5s .25s ease-in;
+  z-index: -1;
+}
+
+.card6::before {
+  top: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+  transform: translate(-100%);
+}
+
+.card6::after {
+  bottom: 0;
+  clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+  transform: translate(100%);
+}
+
+.card6:hover::before,
+.card6:hover::after {
+  transform: translate(0);
+}
+
+.card6:hover .card_content {
+  opacity: 1;
+  transition-delay: .75s;
+}
+
+
+
+/* ............................ boton ............................ */
+
+button {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-image: linear-gradient(90deg, #f2fb78, #ffffff);
+  color: #151515;
+  border: none;
+  cursor: pointer;
+}
+
+button::before,
+button::after {
+  --size: calc(100% + 15px);
+  content: '';
+  position: absolute;
+  inset: 50% 0 0 50%;
+  translate: -50% -50%;
+  pointer-events: none;
+  transition: scale 0.35s;
+}
+
+button::before {
+  width: var(--size);
+  height: 100%;
+  border-top: 2px solid rgb(255, 66, 88);
+  border-bottom: 2px solid rgb(255, 66, 88);
+  scale: .25 1;
+}
+
+button::after {
+  width: 100%;
+  height: var(--size);
+  border-right: 2px solid rgb(255, 66, 88);
+  border-left: 2px solid rgb(255, 66, 88);
+  scale: 1 .25;
+}
+
+button:hover::before,
+button:hover::after {
+  opacity: 1;
+  scale: 1;
+  border-radius: 3px;
+}
